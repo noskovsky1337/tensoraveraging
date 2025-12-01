@@ -1,0 +1,5 @@
+numpy //for both
+statistics //for monte-carlo script
+math //for both
+argparse //for monte-carlo script
+itertools //for tensor averaging script
