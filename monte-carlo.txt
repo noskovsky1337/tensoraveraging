@@ -1,0 +1,13 @@
+This section describes how to use mathematical statistics, and in particular the Monte Carlo method, to solve the problem of average volume.
+First, we calculate the volume using the standard formula: V=(1/6)∣det(B−A,C−A,D−A)∣.
+Next, we convert to spherical coordinates by replacing x = r * sin(θ) * cos(φ) 
+y=r * sin(θ) * sin(φ)
+z =cos(θ) 
+Next, we write down a huge determinant with cosines and sines of theta and phi, which needs to be integrated. 
+The integral should be 12-fold, but some degrees of freedom are reduced and the integral is 6-fold, in which three integrals go from 0 to pi, 
+and the other 3 from 0 to 2pi (azimuth and polar angles). The integrals are over d(\phi_1),  d(\phi_2) ,d(\phi_3) , d(\theta_1) , d(\theta_2) , d(\theta_3)
+The calculations are monstrous, and the complexity of the calculations is growing at a catastrophic rate, so I will move on to describing a purely software-based method. This is the Monte Carlo method, and I will provide a script using this method.
+first result while using monte-carlo script : 
+E[|V|] ≈ 0.12020023463040627
+E[V^2] ≈ 0.02489181665835261
+sqrt(E[V^2]) ≈ 0.1577714063395285
