@@ -1,5 +1,8 @@
 The tensor_averaging.py script literally implements tensor convolution \e_ijk*\e_pqr*\delta_ip*\delta_jq*\delta_kr
-(\e_something - Levi-Civita symbol )
+(\e_something - Levi-Civita symbol ) - {python tensor_averaging.py
+E[det(A,B,C)^2] = 0.2222222222222222 (theory: 2/9 ≈ 0.222222)
+E[V_ABCD^2] = 0.024691358024691357 (theory: 2/81 ≈ 0.024691)
+sqrt(E[V_ABCD^2]) = 0.15713484026367722 (theory: sqrt(2)/9 ≈ 0.157135)}
 
 and outputs the result.
 Let us denote a random vector on the sphere by 
